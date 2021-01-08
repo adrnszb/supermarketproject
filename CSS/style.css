@@ -1,0 +1,496 @@
+/*----- GLOBALES-----*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #e2e2e2;
+}
+
+header .portada .textos {
+  text-align: left;
+  padding: 60px;
+}
+
+/*--- HEADER ---*/
+
+header .portada {
+  position: relative;
+  height: 700px;
+}
+
+header .barra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  padding: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, .93);
+  top: 0;
+}
+
+header .barra a {
+  font-size: 20px;
+  color: #03071E;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+header .barra a:hover {
+  text-decoration: underline;
+}
+
+header .portada .textos{
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+}
+
+
+header .portada .textos .nombre {
+    font-family: "Rambla", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+header .portada .textos .descripcion {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/**---- HEADER CONTACTO ---*/
+header .hc {
+  width: 100%;
+  background: url('../img/ubi.JPG'), #6A040F;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+
+header .hi {
+  width: 100%;
+  background: url('../img/bgg.JPG'), #6A040F;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+
+header .hp {
+  width: 100%;
+  background: url('../img/producto.JPG'), #6A040F;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+
+header .hr {
+  width: 100%;
+  background: url('../img/registro.JPG'), #6A040F;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+
+/*--- MAIN INDEX----*/
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.maindex {
+  background: url('../img/textura.png');
+  background-repeat: repeat;
+}
+
+.maindex .bienvenida .contenedor {
+  overflow: visible;
+  position: relative;
+}
+
+.maindex .bienvenida .foto {
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.maindex .bienvenida .foto img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.maindex .bienvenida article {
+  background: #fff;
+  padding: 40px;
+  width: 50%;
+  position: relative;
+  float: right;
+  top: 30px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.maindex .bienvenida article h3 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.maindex .bienvenida article p {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.maindex .aboutus {
+  padding: 60px;
+  padding-top: 570px;
+}
+
+.maindex .aboutus .titulo {
+  color: #03071E;
+  font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.maindex .aboutus .contenedorgaleria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.maindex .aboutus .contenedorgaleria .foto {
+  width: 33%;
+  margin-bottom: 10px;
+}
+
+.maindex .aboutus .contenedorgaleria .foto img{
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+  opacity: 0.5;
+  padding: 20px;
+}
+
+.maindex .aboutus .contenedorgaleria .foto img:hover{
+  opacity: 1;
+}
+
+.maindex .aboutus .contenedorgaleria .foto .pie {
+  text-align: center;
+  color: #03071E;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+}
+
+/*--- MAIN REGISTRO ---*/
+
+.mainregistro {
+  background: url('../img/textura.png');
+  background-repeat: repeat;
+  padding: 40px;
+  width: 100%;
+}
+
+.mainregistro .titulocompra {
+  text-align: center;
+  font-size: 30px;
+  color: #03071E;
+  padding: 40px 0;
+}
+
+.mainregistro .titulo {
+  color: #03071E;
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* IDEA: detalle compra */
+
+.mainregistro .detalle {
+  border: 2px solid #03071E;
+  border-radius: 3px;
+  width: 70%;
+  margin-left: 63px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.mainregistro .detalle h3 {
+  padding: 30px;
+}
+
+.detalle .form .etiqueta {
+  padding: 10px 30px;
+  font-size: 20px;
+  width: 30%;
+  align-self: center;
+}
+.detalle .form .producto {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.detalle .form .producto .cb,
+.detalle .form .producto .s1{
+  padding: 10px 40px;
+}
+
+.detalle .form .producto .s2{
+  padding: 10px auto;
+  justify-content: center;
+  align-self: center;
+}
+
+/* IDEA: Datos Cliente */
+
+.mainregistro .cliente{
+  margin-top: 30px;
+}
+
+.mainregistro .formulariocliente  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.mainregistro .formulariocliente input[type="text"] {
+  width: 49%;
+  margin-bottom: 15px;
+  border: 2px solid #03071e;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #03071e
+}
+
+.etiqueta {
+  width: 100%;
+  text-align: center;
+  padding: 70px;
+  font-size: 20px;
+}
+
+.etiqueta .sex {
+  border-radius: 3px;
+  border: 2px solid #03071E;
+  background: #fff;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+.mainregistro .formulariocliente .boton {
+  margin: auto;
+  background: #d8675d;
+  color: #f2eae3;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.mainregistro .formulariocliente .boton:hover {
+  background: #03071E;
+}
+
+/*--- MAIN CONTACTO---*/
+.maincontacto {
+  background: url('../img/textura.PNG');
+  width: 100%;
+  padding: 40px;
+}
+
+.maincontacto .titulo {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedorcontacto {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  padding: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.contenedorcontacto .direccion,
+.contenedorcontacto .telefono,
+.contenedorcontacto .email{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedorcontacto .direccion h3,
+.contenedorcontacto .telefono h3,
+.contenedorcontacto .email h3{
+  padding: 10px;
+  font-size: 24px;
+}
+
+.contenedorcontacto .direccion p,
+.contenedorcontacto .telefono p,
+.contenedorcontacto .email p{
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+.maincontacto .mapa {
+	width: 100%;
+	overflow: hidden;
+}
+
+.maincontacto .mapa iframe {
+	width: 100%;
+	max-height: 600px;
+}
+
+/*---------- MAIN PRODUCTO -----------*/
+
+.galeriaproducto .ph {
+  background: url('../img/textura.PNG');
+  width: 100%;
+  padding: 40px;
+}
+
+
+.galeriaproducto .ph .galletas,
+.galeriaproducto .ph .pan,
+.galeriaproducto .ph .mantequilla,
+.galeriaproducto .ph .jabon,
+.galeriaproducto .ph .chocolate,
+.galeriaproducto .ph .quesos,
+.galeriaproducto .ph .embutidos,
+.galeriaproducto .ph .leche,
+.galeriaproducto .ph .snacks,
+.galeriaproducto .ph .shampoo{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.galeriaproducto .ph .galletas    .foto,
+.galeriaproducto .ph .pan         .foto,
+.galeriaproducto .ph .mantequilla .foto,
+.galeriaproducto .ph .jabon       .foto,
+.galeriaproducto .ph .chocolate   .foto,
+.galeriaproducto .ph .quesos      .foto,
+.galeriaproducto .ph .embutidos   .foto,
+.galeriaproducto .ph .leche       .foto,
+.galeriaproducto .ph .snacks      .foto,
+.galeriaproducto .ph .shampoo     .foto{
+  width: 16%;
+  margin-bottom: 20px;
+}
+
+.galeriaproducto .ph .galletas    .foto img,
+.galeriaproducto .ph .pan         .foto img,
+.galeriaproducto .ph .mantequilla .foto img,
+.galeriaproducto .ph .jabon       .foto img,
+.galeriaproducto .ph .chocolate   .foto img,
+.galeriaproducto .ph .quesos      .foto img,
+.galeriaproducto .ph .embutidos   .foto img,
+.galeriaproducto .ph .leche       .foto img,
+.galeriaproducto .ph .snacks      .foto img,
+.galeriaproducto .ph .shampoo     .foto img{
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+.galeriaproducto .ph .galletas    .foto img:hover,
+.galeriaproducto .ph .pan         .foto img:hover,
+.galeriaproducto .ph .mantequilla .foto img:hover,
+.galeriaproducto .ph .jabon       .foto img:hover,
+.galeriaproducto .ph .chocolate   .foto img:hover,
+.galeriaproducto .ph .quesos      .foto img:hover,
+.galeriaproducto .ph .embutidos   .foto img:hover,
+.galeriaproducto .ph .leche       .foto img:hover,
+.galeriaproducto .ph .snacks      .foto img:hover,
+.galeriaproducto .ph .shampoo     .foto img:hover{
+  opacity: 1;
+}
+
+.galeriaproducto .ph .galletas     h2,
+.galeriaproducto .ph .pan          h2,
+.galeriaproducto .ph .mantequilla  h2,
+.galeriaproducto .ph .jabon        h2,
+.galeriaproducto .ph .chocolate    h2,
+.galeriaproducto .ph .quesos       h2,
+.galeriaproducto .ph .embutidos    h2,
+.galeriaproducto .ph .leche        h2,
+.galeriaproducto .ph .snacks       h2,
+.galeriaproducto .ph .shampoo      h2{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/*--- FOOTER ---*/
+
+footer .redes {
+  background:#03071E;
+  padding: 60px 0;
+}
+
+footer .redes .contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+footer .redes a {
+  color: #f2eae3;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+footer .redes .twitter:hover{color: #1da1f2;}
+footer .redes .facebook:hover{color: #3b5998;}
+footer .redes .youtube:hover{color: #cd201f;}
+footer .redes .instagram:hover{color: #3f729b;}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title> Factura </title>
+       <meta name="author" content="Adriana Sánchez estudiante séptimo trimestre UBA">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@300&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Hind+Madurai:wght@400;500&family=Pontano+Sans&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="css/font-awesome.min.css">
+       <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/style.css">
+     </head>
+      <body>
+        <header class="header">
+
+            <div class="hr">
+              <nav class="barra">
+                <a href="index.html">INICIO</a>
+                <a href="registro.html">REGISTRO</a>
+                <a href="producto.html">PRODUCTOS</a>
+                <a href="contacto.html">CONTACTO</a>
+              </nav>
+              <div class="portada">
+                <div class="textos">
+                  <h1 class="nombre">SUPERMARKET</h1>
+                  <h3 class="descripcion">FRESH FOOD</h3>
+                </div>
+              </div>
+            </div>
+
+        </header>
+        <section class="mainregistro">
+          <div class="titulocompra">
+            <h2>REGISTRE SU COMPRA</h2>
+          </div>
+          <form class="factura" action="respuesta.PHP" method="post">
+
+            <div class="detalle">
+              <div class="titulo">
+                <h3>DETALLES DE LA COMPRA</h3>
+              </div>
+
+              <div class="form">
+
+                  <div class="producto">
+                      <label class="etiqueta">Galletas</label>
+                    <div class="cb">
+                      <input type="checkbox" name="galletas" value=>
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcagalletas">
+                        <option value="1">Club Social</option>
+                        <option value="2">Reinitas</option>
+                        <option value="3">Flips</option>
+                        <option value="4">María Puig</option>
+                        <option value="5">Galletón</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadgalletas">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Pan</label>
+                    <div class="cb">
+                      <input type="checkbox" name="pan" value=>
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcapan">
+                        <option value="1">Bimbo Artesanal</option>
+                        <option value="2">Bimbo Diet</option>
+                        <option value="3">Holsum</option>
+                        <option value="4">Holsum 7 Cereales</option>
+                        <option value="5">Pan Árabe</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadpan">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Mantequilla</label>
+                    <div class="cb">
+                      <input type="checkbox" name="mantequilla" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcamantequilla">
+                        <option value="1">Mavesa</option>
+                        <option value="2">Marisol</option>
+                        <option value="3">Maracay</option>
+                        <option value="4">Pascual</option>
+                        <option value="5">Chiffon</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadmantequilla">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Jabon</label>
+                    <div class="cb">
+                      <input type="checkbox" name="jabon" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcajabon">
+                        <option value="1">Dalan</option>
+                        <option value="2">Protex</option>
+                        <option value="3">Dove</option>
+                        <option value="4">Harmony</option>
+                        <option value="5">Medicare</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadjabon">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Chocolate</label>
+                    <div class="cb">
+                      <input type="checkbox" name="chocolate" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcachocolate">
+                        <option value="1">Savoy</option>
+                        <option value="2">El Rey</option>
+                        <option value="3">Franceschi</option>
+                        <option value="4">Chuao</option>
+                        <option value="5">Galak</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadchocolate">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Quesos</label>
+                    <div class="cb">
+                      <input type="checkbox" name="quesos" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcaquesos">
+                        <option value="1">Paisa Blanco</option>
+                        <option value="2">Del Tambo</option>
+                        <option value="3">Toscano Pecorino</option>
+                        <option value="4">Laive Mozzarella</option>
+                        <option value="5">Kraft Parmesano</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadqueso">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Embutidos</label>
+                    <div class="cb">
+                      <input type="checkbox" name="embutidos" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcaembutidos">
+                        <option value="1">Chorizo de Ajo</option>
+                        <option value="2">Salchicha Tipo Wiener</option>
+                        <option value="3">Salchicha Cocida</option>
+                        <option value="4">Chorizo Ahumado</option>
+                        <option value="5">Salchicha Tipo Frankfurt</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadembutidos">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Leche</label>
+                    <div class="cb">
+                      <input type="checkbox" name="Leche" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcaleche">
+                        <option value="1">Los Andes</option>
+                        <option value="2">La Campiña</option>
+                        <option value="3">San Simón</option>
+                        <option value="4">Mi Vaca</option>
+                        <option value="5">Pascual</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadleche">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                    <label class="etiqueta">Snacks</label>
+                    <div class="cb">
+                      <input type="checkbox" name="snacks" value="">
+                    </div>
+                    <div class="s1">
+                      <select class="" name="marcasnacks">
+                        <option value="1">Nutella</option>
+                        <option value="2">Doritos</option>
+                        <option value="3">Peanut Butter</option>
+                        <option value="4">Tridents</option>
+                        <option value="5">Bombones Ferrero</option>
+                      </select>
+                    </div>
+                    <div class="s2">
+                      <select name="cantidadsnacks">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="producto">
+                      <label class="etiqueta">Shampoo</label>
+                      <div class="cb">
+                        <input type="checkbox" name="shampoo" value="">
+                      </div>
+                      <div class="s1">
+                        <select class="" name="marcashampoo">
+                          <option value="1">Pantene</option>
+                          <option value="2">Garnier</option>
+                          <option value="3">L'Oreal</option>
+                          <option value="4">Sedal</option>
+                          <option value="5">Drene</option>
+                        </select>
+                      </div>
+                      <div class="s2">
+                        <select name="cantidadshampoo">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                  </div>
+
+                  <div class="cliente">
+                    <div class="titulo">
+                      <h3>DATOS DEL CLIENTE</h3>
+                    </div>
+
+                    <div class="formulariocliente">
+                      <input type="text" name="nombre" value="" placeholder="Nombre:" required>
+                      <input type="text" name="apellido" value="" placeholder="Apellido:" required>
+                      <input type="text" name="cedula" value="" placeholder="CI:" required>
+                      <input type="text" name="edad" value="" placeholder="Edad:" required>
+                      <input type="text" name="direccion" value="" placeholder="Dirección:" required>
+                      <input type="text" name="telefono" value="" placeholder="Teléfono:" required>
+                      <div class="etiqueta">
+                        <label class="sex">Sexo</label>
+                        <input type="radio" name="sexo" value="H"> Masculino
+                        <input type="radio" name="sexo" value="M">  Femenino
+                      </div>
+                      <div class="boton">
+                        <input type="submit" class="boton" name="ENVIAR" value="Enviar">
+                      </div>
+                    </div>
+
+                       </div>
+          </form>
+
+
+
+        </section>
+
+      <footer>
+        <section class="redes">
+          <div class="contenedor">
+            <a class="twitter" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a class="facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a class="youtube" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+            <a class="instagram" href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+          </div>
+        </section>
+      </footer>
+      </body>
+</html

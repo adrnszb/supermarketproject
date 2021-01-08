@@ -1,0 +1,179 @@
+/*----- GLOBALES-----*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #e2e2e2;
+}
+
+header .barra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  padding: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, .93);
+  top: 0;
+}
+
+header .barra a {
+  font-size: 20px;
+  color: #03071E;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+header .barra a:hover {
+  text-decoration: underline;
+}
+
+
+/* IDEA: main */
+
+.main .contenedor {
+  width: 100%;
+  margin-top: 100px;
+  padding: 40px;
+  background: url('../img/textura.PNG');
+}
+
+.contenedor h1 {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+.contenedor h2 {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Rambla', sans-serif;
+}
+
+.facturacliente,
+.facturadetalle,
+.total {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
+}
+
+.facturadetalle .cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.cont .supp,
+.con .result,
+.cont .pri {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont .supp .titulo,
+.cont .result .titulo,
+.cont .pri .titulo {
+  text-align: center;
+  padding: 10px;
+}
+
+.cont .supp .pro  {
+  font-size: 18px;
+  padding: 10px;
+  text-align: left;
+}
+
+.cont .result .quant,
+.cont .pri .v{
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cont .titulo {
+  width: 100%;
+  text-align: center;
+}
+
+
+.facturacliente .titulo,
+.facturadetalle .detalle,
+.total .titlepago {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  background: rgba(157, 2, 8, 0.65);
+  color: #fff;
+}
+
+.facturadetalle {
+  margin-bottom: 20px;
+}
+
+.facturadetalle .detalle {
+  margin-bottom: 30px;
+}
+
+.facturacliente .cliente,
+.facturadetalle .contenedor,
+.total .titletotal {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.facturacliente .cliente p,
+.facturadetalle .titulo p,
+.total .titletotal p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.facturadetalle .titulo p{
+  margin-left: 20px;
+}
+
+/*--- FOOTER ---*/
+
+footer .redes {
+  background:#03071E;
+  padding: 20px 0;
+}
+
+footer .redes .contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 100px;
+}
+
+footer .redes a {
+  color: #f2eae3;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+footer .redes .twitter:hover{color: #1da1f2;}
+footer .redes .facebook:hover{color: #3b5998;}
+footer .redes .youtube:hover{color: #cd201f;}
+footer .redes .instagram:hover{color: #3f729b;}
